@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; connect-src 'self' {WebApiUrl}">
+    <!-- Device için, "connect-src 'self' {WebApiUrl};" eklenmelidir. -->
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>PostGet</title>
+
+    <style>
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15pt;
+        }
+
+        .button {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15pt;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button2 {
+            background-color: #008CBA; /* Blue */
+        }
+
+        .button3 {
+            background-color: #f44336; /* Red */
+        }
+
+        .button4 {
+            background-color: #e7e7e7; /* Gray */
+            color: black;
+        }
+
+        .button5 {
+            background-color: #555555; /* Black */
+        }
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <center>
+            <h1>Post Get Sample</h1>
+            <br />
+            <button class="button" id="BtnState">Son Durum</button>
+            <br />
+            <button class="button button2" id="Btn">Aç</button>
+            <br />
+            <p id="txtResult"></p>
+        </center>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script src="scripts/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
